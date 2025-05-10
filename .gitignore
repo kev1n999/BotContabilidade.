@@ -1,0 +1,14 @@
+# images
+/assets/logo.png
+
+# database
+*.db
+
+# config files
+/config/hallowed-tea-387701-34bbaf2630f4.json
+.env
+
+# cache & cloud
+__pycache__/
+*.pickle
+/discloud.config
