@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "Hack Nerd Font Mono",
+    "editor.fontSize": 13,
+    "files.exclude": {
+        "**/__pycache__": true
+    }
+}
