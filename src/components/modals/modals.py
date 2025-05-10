@@ -4,6 +4,7 @@ from json import load
 from database.bases import staffs
 from functions.sheets import atualizar_recomendacao, get_recomendacao, criar_planilha_avaliacao, authenticate_google_sheets
 from selects.nota_select import NotaSelect
+from constants.constants import TICKET_HISTORIC as ticket_historic
 
 db = staffs.StaffsDatabase()
 cursor = db.cursor 
@@ -19,9 +20,6 @@ with open("config/config.json", "r") as config:
 
 STAFF_ROLE = file["staff_role"]
 TRANSCRIPT_CHANNEL = file["canal_transcripts"]
-
-# --> REGISTRO <-- 
-ticket_historic = {}
         
 class AvaliacaoModal(Modal):
     def __init__(self, ticket_channel, user, staff):

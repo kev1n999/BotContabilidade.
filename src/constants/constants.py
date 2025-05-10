@@ -4,6 +4,8 @@ with open("../config/config.json", "r") as config:
     file = load(config)
     CATEGORIES = file["categorys"]
 
+TICKET_HISTORIC = {}
+
 BOT_PREFIX = file["prefix"]
 WELCOME_CHANNEL = file["canal_boasvindas"]
 

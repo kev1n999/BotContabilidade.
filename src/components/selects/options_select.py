@@ -1,6 +1,5 @@
 import discord 
 from constants.constants import *
-from modals.modals import ticket_historic
 from datetime import datetime 
 from buttons.ticket_options import TicketOptionsButtons
 
@@ -78,7 +77,7 @@ class SelectMenuOptions(discord.ui.Select):
             
         ticket_channel = await interaction.guild.create_text_channel(ticket_name, category=discord.utils.get(interaction.guild.categories, id=ticket_id), overwrites=overwrites)
 
-        ticket_historic[ticket_channel.id] = {
+        TICKET_HISTORIC[ticket_channel.id] = {
             "user": interaction.user.name,
             "user_id": interaction.user.id,
             "data": datetime.now(),
