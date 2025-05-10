@@ -3,7 +3,7 @@ from discord.ui import Modal, InputText, View
 from json import load 
 from database.bases import staffs
 from functions.sheets import atualizar_recomendacao, get_recomendacao, criar_planilha_avaliacao, authenticate_google_sheets
-from src.cogs.components.selects.nota_select import NotaSelect
+from selects.nota_select import NotaSelect
 
 db = staffs.StaffsDatabase()
 cursor = db.cursor 
@@ -79,6 +79,3 @@ class AvaliacaoModal(Modal):
 
         sim, nao = get_recomendacao(user_id=self.staff.id)
         criar_planilha_avaliacao(authenticate_google_sheets(), sim=sim, nao=nao)
-
-def setup():
-    ...

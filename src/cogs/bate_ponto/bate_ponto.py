@@ -3,7 +3,7 @@ from discord.ext import commands
 from database.database import Database
 from database.bases import bate_ponto
 from constants.constants import STAFF_ROLE_ID 
-from cogs.components.buttons.bate_ponto import PontoView
+from components.buttons.bate_ponto import PontoView
 
 db = bate_ponto.BatePontoDatabase()
 db.table_ponto()

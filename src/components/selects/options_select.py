@@ -1,8 +1,8 @@
 import discord 
 from constants.constants import *
-from components.modals.modals import ticket_historic
+from modals.modals import ticket_historic
 from datetime import datetime 
-from components.buttons.ticket_options import TicketOptionsButtons
+from buttons.ticket_options import TicketOptionsButtons
 
 class SelectMenuOptions(discord.ui.Select):
     def __init__(self, custom_id="select_menu_options"):

@@ -1,7 +1,7 @@
 import discord 
-from components.modals.modals import ticket_historic
+from modals.modals import ticket_historic
 from datetime import datetime 
-from components.buttons.ticket_options import TicketOptionsButtons
+from buttons.ticket_options import TicketOptionsButtons
 from constants.constants import ORCAMENTO, STAFF_ROLE
 
 class OrcamentoButton(discord.ui.Button):

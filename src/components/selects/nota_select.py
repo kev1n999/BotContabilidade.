@@ -2,7 +2,7 @@ import discord
 
 from functions.sheets import criar_planilha_nota, authenticate_google_sheets
 from functions.transcript import generate_transcript
-from components.modals.modals import ticket_historic
+from modals.modals import ticket_historic
 
 class NotaSelect(discord.ui.Select):
     def __init__(self, ticket_channel, staff):

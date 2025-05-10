@@ -2,8 +2,7 @@ import discord
 from discord.ui import View, Button
 from constants.constants import STAFF_ROLE
 from database.bases import staffs
-from components.modals.modals import AvaliacaoModal
-from components.modals.modals import ticket_historic
+from modals.modals import AvaliacaoModal, ticket_historic
 
 db = staffs.StaffsDatabase()
 cursor = db.cursor
