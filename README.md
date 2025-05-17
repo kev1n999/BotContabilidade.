@@ -1,5 +1,5 @@
 # Bot para escritório real de contabilidade
-Este projeto foi desenvolvido para facilitar atendimentos e gerenciamento da staff.
+Este projeto foi desenvolvido para facilitar atendimentos e gerenciamento da staff em um escritório de contabilidade no discord.
 
 # Tecnologias
 * Linguagem de Programação: Python
